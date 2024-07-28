@@ -34,6 +34,16 @@ body {
 
 }
 
-.right div {
+.one,
+two {
 	height: 33vh;
 }
+
+.one {
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-end;
+	margin-left: 5%;
+	margin-bottom: 5%;
+}
+
