@@ -22,5 +22,16 @@ body {
 	display: flex;
 	width: 35vw;
 	color: white;
+	font-family: Norse;
 }
 
+.right {
+	display: flex;
+	flex-direction: column;
+	width: 50vw;
+
+}
+
+.right div {
+	height: 33vh;
+}
