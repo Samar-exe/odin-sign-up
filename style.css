@@ -2,3 +2,9 @@
 	font-family: Norse;
 	src: url(./assets/Norse-Bold.otf);
 }
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
