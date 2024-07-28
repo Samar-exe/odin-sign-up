@@ -28,7 +28,9 @@ body {
 .right {
 	display: flex;
 	flex-direction: column;
-	width: 50vw;
+	width: 65vw;
+	background-color: #f5f5f5;
+
 
 }
 
