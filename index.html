@@ -13,7 +13,10 @@
 
 	<div class="main">
 		<div class="left">
-			<h1>ODIN</h1>
+			<div class="logo">
+				<img src="assets/logo.png" alt="">
+				<h1>ODIN</h1>
+			</div>
 		</div>
 		<div class="right">
 			<div class="one">
@@ -41,19 +44,21 @@
 						<div class="input-divs">
 
 							<label for="email">EMAIL</label>
-							<input type="email" name="email" id="email">
+							<input type="email" name="mail" id="mail">
 						</div>
 						<div class="input-divs">
 
 							<label for="tel">PHONE NUMBER</label>
-							<input type="tel" name="tel" id="tel">
+							<input type="tel" name="tel" id="tel" pattern="^\d{10}"
+								placeholder="10 digit phone no.">
 						</div>
 					</div>
 					<div class="form-divs">
 						<div class="input-divs">
 
 							<label for="pass">PASSWORD</label>
-							<input type="password" name="pass" id="pass">
+							<input type="password" name="pass" id="pass"
+								pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])\S{6,}">
 						</div>
 						<div class="input-divs">
 
@@ -61,9 +66,15 @@
 							<input type="password" name="confirm-pass" id="confirm-pass">
 						</div>
 					</div>
+					<input type="submit" name="" id="submit-form">
 				</form>
 			</div>
-			<div class="three">Sup</div>
+			<div class="three">
+				<div class="submit">
+					<label for="submit-form">Create Account</label>
+				</div>
+				<h4>Already have an account? <a href="">Log in</a></h4>
+			</div>
 		</div>
 	</div>
 </body>
