@@ -25,6 +25,29 @@ body {
 	font-family: Norse;
 }
 
+.left img {
+	width: 7vw;
+	height: 20vh;
+}
+
+.logo {
+	position: absolute;
+	top: 8vh;
+	width: 35%;
+	display: flex;
+	justify-content: center;
+	background-color: rgba(0, 0, 0, 0.6);
+	padding-top: 10px;
+	height: 22vh;
+	font-size: 4vw;
+}
+
+.logo h1 {
+	margin: 0;
+	position: relative;
+	top: 3vh;
+}
+
 .right {
 	display: flex;
 	flex-direction: column;
