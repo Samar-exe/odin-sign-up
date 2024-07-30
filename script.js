@@ -7,3 +7,24 @@ password.addEventListener("input", (event) => {
 		password.setCustomValidity("");
 	}
 });
+
+
+// Applying constraint validation api to password input.
+const email = document.getElementById("mail")
+email.addEventListener("input", (event) => {
+	if (email.validity.patternMismatch) {
+		email.setCustomValidity("Your email is not in the correct pattern");
+	} else {
+		email.setCustomValidity("");
+	}
+});
+
+
+const number = document.getElementById("tel")
+number.addEventListener("input", (event) => {
+	if (number.validity.patternMismatch) {
+		number.setCustomValidity("Only ten digit numbers are accepted");
+	} else {
+		number.setCustomValidity("");
+	}
+});
