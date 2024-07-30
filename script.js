@@ -23,7 +23,7 @@ email.addEventListener("input", (event) => {
 const number = document.getElementById("tel")
 number.addEventListener("input", (event) => {
 	if (number.validity.patternMismatch) {
-		number.setCustomValidity("Only ten digit numbers are accepted");
+		number.setCustomValidity("Only Indian Numbers are accepted");
 	} else {
 		number.setCustomValidity("");
 	}
