@@ -32,25 +32,29 @@
 					<div class="form-divs">
 						<div class="input-divs">
 							<label for="first-name">FIRST NAME</label>
-							<input type="text" name="first-name" id="first-name">
+							<input type="text" name="first-name" id="first-name" required>
 						</div>
 						<div class="input-divs">
 
 							<label for="last-name">LAST NAME</label>
-							<input type="text" name="last-name" id="last-name">
+							<input type="text" name="last-name" id="last-name" required>
 						</div>
 					</div>
 					<div class="form-divs">
 						<div class="input-divs">
 
 							<label for="email">EMAIL</label>
-							<input type="email" name="mail" id="mail">
+							<input type="email" name="mail" id="mail" minlength="8"
+								required>
+							<span class="error email-error" aria-live="polite"></span>
 						</div>
 						<div class="input-divs">
 
 							<label for="tel">PHONE NUMBER</label>
 							<input type="tel" name="tel" id="tel" pattern="^\d{10}"
-								placeholder="10 digit phone no.">
+								placeholder="10 digit phone no." required
+								maxlength="10">
+							<span class="error tel-error" aria-live="polite">Sup</span>
 						</div>
 					</div>
 					<div class="form-divs">
@@ -58,12 +62,16 @@
 
 							<label for="pass">PASSWORD</label>
 							<input type="password" name="pass" id="pass"
-								pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])\S{6,}">
+								pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])\S{6,}"
+								required>
+							<span class="error pass-error" aria-live="polite"></span>
+
 						</div>
 						<div class="input-divs">
 
 							<label for="confirm-pass">CONFIRM PASSWORD</label>
-							<input type="password" name="confirm-pass" id="confirm-pass">
+							<input type="password" name="confirm-pass" id="confirm-pass"
+								required>
 						</div>
 					</div>
 					<input type="submit" name="" id="submit-form">
