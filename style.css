@@ -85,6 +85,7 @@ two {
 	margin-left: 5%;
 	margin-bottom: 2%;
 	font-size: calc(5px + 1vw);
+	flex-wrap: wrap;
 }
 
 .form-divs:nth-child(3) {
