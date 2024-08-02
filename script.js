@@ -67,3 +67,21 @@ function errorTel() {
 	// else {
 
 }
+
+
+// Adding validation for confirm password field
+const confirm = document.getElementById("confirm-pass")
+const confirmError = document.querySelector("#confirm-pass + span.confirm-error")
+confirm.addEventListener("input", (event) => {
+	errorConfirm();
+	event.preventDefault();
+});
+function errorConfirm() {
+	if (confirm.value != password.value) {
+		confirmError.textContent = "Does not match the given password";
+	}
+	else {
+		confirmError.textContent = "";
+	};
+
+}
