@@ -103,6 +103,7 @@ input {
 	outline: none;
 	border: 2px solid #b5b7bB;
 	border-radius: 3px;
+	width: 200px;
 }
 
 input:focus {
@@ -111,6 +112,10 @@ input:focus {
 }
 
 input:invalid {
+	border: 1px solid red;
+}
+
+input:invalid:required() {
 	border: 1px solid red;
 }
 
@@ -149,4 +154,10 @@ input:invalid {
 .three a {
 	color: #596d48;
 	text-decoration: none;
+}
+
+
+.error {
+	color: red;
+	width: 200px;
 }
