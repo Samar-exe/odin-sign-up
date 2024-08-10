@@ -57,6 +57,7 @@ function errorTel() {
 	}
 	else if (number.value.length < 10) {
 		telError.textContent = `You need to enter a 10 digit number. Current no. of digits:${number.value.length}`
+		number.setCustomValidity("")
 	}
 	else {
 		telError.textContent = ""
